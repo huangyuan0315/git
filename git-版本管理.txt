@@ -1,0 +1,71 @@
+1  创建一个空目录
+
+mkdir learngit
+
+本地git目录  C:\Users\源\learngit
+
+
+2  把这个目录变成Git可以管理的仓库
+
+git init
+
+
+3  添加文件到仓库；一定要放到learngit目录下（子目录也行），因为这是一个Git仓库，放到其他地方Git再厉害也找不到这个文件。
+
+例如我们要添加文件 yuan.txt
+
+git add yuan.txt
+
+git commit -m "wrote a yuan.txt"
+
+
+简单解释一下  git add命令实际上就是把要提交的所有修改放到暂存区（Stage）
+
+简单解释一下  git commit就可以一次性把暂存区的所有修改提交到 master 分支，
+
+git commit命令，-m后面输入的是本次提交的说明，可以输入任意内容，当然最好是有意义的，这样你就能从历史记录里方便地找到改动记录。
+
+
+4 git log 查看提交历史
+
+
+
+5 git log --pretty=oneline   查看commit id（版本号）
+
+
+6 git reflog查看命令历史
+
+
+7 查看仓库中指定文件的内容
+
+例如我们要查看yuan.txt
+
+cat yuan.txt
+
+
+8 版本回退  
+  	（1）git reset --hard HEAD^ 
+
+		上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，可以写成HEAD~100
+
+
+	（2）git reset --hard e40a00a
+
+		e40a00a----回退的那个版本的commit id
+
+
+
+9. git checkout -- yuan.txt   撤销修改
+
+
+10  rm yuan.txt   删除文件
+
+
+
+
+
+
+
+
+
+

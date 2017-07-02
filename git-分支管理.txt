@@ -1,0 +1,27 @@
+1 git checkout -b <name>  创建+切换分支
+
+例如创建 yuan 分支 
+
+git checkout -b yuan
+
+
+
+2  git checkout master  切换回主分支（master分支）
+
+   git checkout <name>   切换分支
+
+3  (1) git merge <name>   合并某分支到当前分支	
+
+   (2) git merge --no-ff -m "merge with no-ff --<name>" <name>       
+
+   --no-ff参数，表示禁用Fast forward
+ 
+   合并分支时，加上--no-ff参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而fast forward合并就看不出来曾经做过合并。
+
+
+
+4  git branch -d <name>  删除分支
+
+
+
+
